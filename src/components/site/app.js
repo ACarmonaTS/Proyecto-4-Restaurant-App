@@ -1,7 +1,16 @@
-import header from "./header/header.js"
+import React from "react";
+
+import Header from "./header/header.js"
+import Menu from "./main/menu/menu.js";
+// import Cards from "./main/menu/cards.js"
 
 function App() {
-  return header();
+  return(
+    <React.Fragment>
+      <header>{Header()}</header>
+      <main>{Menu()}</main>
+    </React.Fragment>
+  )
 }
 
 export default App;

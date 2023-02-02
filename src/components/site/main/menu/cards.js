@@ -1,21 +1,32 @@
+import { useState } from "react";
 import InsertImg from "../../image.js"
-import * as Images from "../../../assets/images.js"
 
-function Cards(){
+function Cards(props){
+    const [animationCard, setAnimationCard] = useState(false);
+    const title = props.data.title;
+    const price = props.data.price;
+    const description = props.data.description;
+    const sentence = props.data.sentence;
+    const src = props.data.src;
+    const alt = props.data.alt;
     return(
-        <section className="card">
+        <section 
+            className={animationCard ? "cardHover": "card"}
+            onMouseLeave={() => setAnimationCard(false)}
+            onMouseEnter={() => setAnimationCard(true)}
+        >
             <div className="titleCard">
-                <h3>Hamburguesa de guacamole</h3>&nbsp;&nbsp;&nbsp;
-                <div style={{color: "green", fontWeight: "bold", fontSize: "xx-large"}}>$85.00</div>
+                <h3>{title}</h3>&nbsp;&nbsp;&nbsp;
+                <div style={{color: "green", fontWeight: "bold", fontSize: "xx-large"}}>{price}</div>
             </div>
             <div className="cardHam">
-                <InsertImg src={Images.burgers[0].src} alt={Images.burgers[0].alt} />
+                <InsertImg src={src} alt={alt} animation={animationCard} />
             </div>
-            <div className="visibleCard">
-                Con doble carne a la parrilla, cremoso guacamole, 
-                lechuga fresca, rodajas de jalapeño, queso Monterrey,
-                tocino y cebollitas crujientes.  
-                <b> ¡Un mundo nuevo lleno de sabor!</b>
+            <div 
+                className={!animationCard ? "visibleCardHover": "visibleCard"}
+            >
+                {description}  
+                <b> {sentence}</b>
             </div>
         </section>
     )

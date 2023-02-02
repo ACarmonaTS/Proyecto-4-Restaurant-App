@@ -1,6 +1,6 @@
 import React from "react";
 
-import * as Images from "../../assets/images.js";
+import * as Info from "../../assets/info.js";
 import InsertImg from "../image.js";
 import * as Options from "./options.js";
 import CreateList from "./list.js";
@@ -18,7 +18,7 @@ function Header() {
           </ul>
         </div>
         <div className="logo">
-          <InsertImg src={Images.logoData.src} alt={Images.logoData.alt} />
+          <InsertImg src={Info.logoData.src} alt={Info.logoData.alt} />
         </div>
         <div>
           <ul>

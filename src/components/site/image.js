@@ -1,6 +1,10 @@
 function InsertImg(props) {
   return (
-    <img src={props.src} alt={props.alt} />
+    <img 
+      className={!props.animationCard ? "cardHamImg": "cardHamImgHover"}
+      src={props.src}
+      alt={props.alt}
+      />
   );
 }
 

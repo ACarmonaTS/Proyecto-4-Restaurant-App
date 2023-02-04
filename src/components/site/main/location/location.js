@@ -7,11 +7,13 @@ function Location(){
     return(
         <React.Fragment>
             <div className="locationCards">
-                {Info.dataCenter.map((data, index) => {
-                    return(
-                        <Cards key={index} data={data} />
-                    );
-                })}
+                <section className="sectionLocate">
+                    {Info.dataCenter.map((data, index) => {
+                        return(
+                            <Cards key={index} data={data} />
+                        );
+                    })}
+                </section>
             </div>
         </React.Fragment>
     )

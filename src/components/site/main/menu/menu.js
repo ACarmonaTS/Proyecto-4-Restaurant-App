@@ -7,11 +7,42 @@ function Menu(){
     return(
         <React.Fragment>
             <menu>
-                {Info.burgers.map((tipeBurgers, index) => {
-                    return(
-                        <Cards key={index} data={tipeBurgers} />
-                    );
-                })}
+                <h3>Lo más pedido</h3>
+                <div className="container">
+                    {Info.burgers.map((tipeBurgers, index) => {
+                        return(
+                            <Cards key={index} data={tipeBurgers} />
+                        );
+                    })}
+                </div>
+                <div className="container">
+                    {Info.burgers.map((tipeBurgers, index) => {
+                        return(
+                            <Cards key={index} data={tipeBurgers} />
+                        );
+                    })}
+                </div>
+                <div className="container">
+                    {Info.burgers.map((tipeBurgers, index) => {
+                        return(
+                            <Cards key={index} data={tipeBurgers} />
+                        );
+                    })}
+                </div>
+                <div className="container">
+                    {Info.burgers.map((tipeBurgers, index) => {
+                        return(
+                            <Cards key={index} data={tipeBurgers} />
+                        );
+                    })}
+                </div>
+                <div className="container">
+                    {Info.burgers.map((tipeBurgers, index) => {
+                        return(
+                            <Cards key={index} data={tipeBurgers} />
+                        );
+                    })}
+                </div>
             </menu>
         </React.Fragment>
     )

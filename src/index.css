@@ -91,8 +91,20 @@ menu{
     width: 90%;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+menu h3{
+    margin: 20px 0;
+    font-size: xx-large;
+}
+
+.container{
+    width: 90%;
+    margin: 20px 0;
+    display: flex;
 }
 
 .card{
@@ -164,15 +176,26 @@ menu{
 }
 /* Section Localitation*/
 .locationCards{
+    width: 100%;
+    height: 250px;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(35, 35, 35);
+}
+
+.sectionLocate{
+    width: 80%;
+    height: 70%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .cardLocation{
-    width: 30%;
+    width: 25%;
     padding: 1%;
     border-top: 1px solid rgb(35, 35, 35);
     border-right: 3px solid rgb(35, 35, 35);
@@ -182,6 +205,7 @@ menu{
     justify-content: space-around;
     align-items: center;
     transition-duration: 200ms;
+    background-color: white;
 }
 
 .cardLocationHover{
@@ -195,6 +219,7 @@ menu{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .cardLocate{
@@ -261,6 +286,52 @@ form input{
 
 .datesTime input{
     width: 45%;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+}
+
+footer li{
+    margin: 5px auto;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+    cursor: default;
+}
+
+.izqFooter li{
+    transition-duration: 200ms;
+    background-image: linear-gradient(yellow, orange, yellow);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.izqFooter li:hover, .izqFooter li:focus{
+    transform: scale(1.5);
+    transform-origin: center;
+    transition-duration: 600ms;
+    background-size: 100% 2px;
 }
 
 @media (max-width: 1199px){

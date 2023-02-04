@@ -4,6 +4,7 @@ import Header from "./header/header.js";
 import Menu from "./main/menu/menu.js";
 import Location from "./main/location/location.js";
 import Reserve from "./main/reserve/reserve.js";
+import Footer from "./footer/footer.js";
 // import Cards from "./main/menu/cards.js"
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         {Location()}
         {Reserve()}
       </main>
+      <footer>{Footer()}</footer>
     </React.Fragment>
   );
 }

@@ -6,7 +6,7 @@ import * as Info from "../../../assets/info.js"
 function Menu(){
     return(
         <React.Fragment>
-            <menu>
+            <menu id="menuHam">
                 <h3>Lo más pedido</h3>
                 <div className="container">
                     {Info.burgers.map((tipeBurgers, index) => {
@@ -16,28 +16,14 @@ function Menu(){
                     })}
                 </div>
                 <div className="container">
-                    {Info.burgers.map((tipeBurgers, index) => {
+                    {Info.burgers2.map((tipeBurgers, index) => {
                         return(
                             <Cards key={index} data={tipeBurgers} />
                         );
                     })}
                 </div>
                 <div className="container">
-                    {Info.burgers.map((tipeBurgers, index) => {
-                        return(
-                            <Cards key={index} data={tipeBurgers} />
-                        );
-                    })}
-                </div>
-                <div className="container">
-                    {Info.burgers.map((tipeBurgers, index) => {
-                        return(
-                            <Cards key={index} data={tipeBurgers} />
-                        );
-                    })}
-                </div>
-                <div className="container">
-                    {Info.burgers.map((tipeBurgers, index) => {
+                    {Info.burgers3.map((tipeBurgers, index) => {
                         return(
                             <Cards key={index} data={tipeBurgers} />
                         );

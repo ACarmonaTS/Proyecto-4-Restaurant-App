@@ -20,7 +20,7 @@ function Footer() {
         <InsertImg src={Info.logoData.src} alt={Info.logoData.alt} />
       </div>
       <div>
-        <ul>
+        <ul className="footerRigth">
           {" "}
           {Options.optionsFooterRigth.map((option, index) => {
             return <CreateList key={index} data={option} />;

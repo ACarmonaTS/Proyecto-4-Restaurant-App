@@ -13,7 +13,7 @@ function Header() {
           <ul>
             {" "}
             {Options.optionsHeaderLeft.map((option, index) => (
-              <CreateList key={index} data={option} />
+              <CreateList key={index} data={option.desc} href={option.href}/>
             ))}{" "}
           </ul>
         </div>
@@ -24,7 +24,7 @@ function Header() {
           <ul>
             {" "}
             {Options.optionsHeaderRigth.map((option, index) => {
-              return <CreateList key={index} data={option} />;
+              return <CreateList key={index} data={option.desc} href={option.href} />;
             })}{" "}
           </ul>
         </div>

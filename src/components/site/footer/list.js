@@ -1,5 +1,5 @@
 function CreateList(props){
-    return( <li>{props.data}</li> )
+    return( <li className="footerRigth">{props.data}</li> )
 }
 
 export default CreateList

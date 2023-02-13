@@ -1,5 +1,6 @@
 function CreateList(props){
-    return( <li>{props.data}</li> )
+    console.log(props)
+    return( <li><link href={props.href} />{props.data}</li> )
 }
 
 export default CreateList

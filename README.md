@@ -1,8 +1,8 @@
 # Proyecto 4 Restaurant App
 
 ****
-Link: https://63ec1c871e5b4e336c344542--sparkly-malabi-3a89a6.netlify.app/
-###Uso de: React, React Router, Hooks, Props, Firebase
+### Link: https://63ec1c871e5b4e336c344542--sparkly-malabi-3a89a6.netlify.app/
+### Uso de: React, React Router, Hooks, Props, Firebase
 
 ## **ÍNDICE**
 

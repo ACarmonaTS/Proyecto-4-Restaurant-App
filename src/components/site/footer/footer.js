@@ -16,7 +16,7 @@ function Footer() {
           ))}{" "}
         </ul>
       </div>
-      <div>
+      <div className="hamFooter">
         <InsertImg src={Info.logoData.src} alt={Info.logoData.alt} />
       </div>
       <div>

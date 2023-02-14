@@ -4,6 +4,9 @@
 }
 
 /*This is for the header site*/
+.smallScreen{
+    display: none;
+}
 
 header{
     width: 100%;
@@ -101,6 +104,11 @@ menu h3{
     font-size: xx-large;
 }
 
+.linkRouter{
+    text-decoration: none;
+    color: white;
+}
+
 .container{
     width: 90%;
     margin: 20px 0;
@@ -110,33 +118,39 @@ menu h3{
 /* Section presentation*/
 
 .presentation{
+    transition-duration: 1s;
     width: 100%;
-    height: 500px;
+    height: 35rem;
 }
 
 .heroImage {
     background-image: url("./components/assets/food.png");;
     background-size: cover;
-    background-position: center;
-    height: 500px;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 1;
+    text-align: center;
   }
   
   .heroImage h2 {
+    width: 100%;
     color: rgb(0, 0, 0);
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.863);
     font-size: 4rem;
   }
   
   .heroImage p {
+    width: 100%;
     color: rgb(0, 0, 0);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.863);
     font-size: 3rem;
 }
 
@@ -294,8 +308,8 @@ button:hover{
 /*Form*/
 
 .reserve{
-    margin: auto;
-    padding: 40px 0;
+    margin: 80px auto 0 auto;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -374,59 +388,120 @@ footer li{
     margin: 8px 0;
 }
 
+.hamFooter{
+    display: block;
+}
+
+/* Screen <1200px*/
 @media (max-width: 1199px){
-    header{
-        width: 100%;
-        height: 80px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        background: rgb(35, 35, 35);
-        display: flex;
+    .heroImage {
+        opacity: 1;
+        text-align: center;
+    }
         
+    .heroImage h2 {
+        width: 100%;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.863);
+        font-size: 4rem;
+        opacity: 1;
     }
-    
-    nav{
+        
+    .heroImage p {
+        width: 100%;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.863);
+        font-size: 3rem;
+    }
+
+    .fullScreen{
+        display: none;
+    }
+
+    .smallScreen{
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
-    
-    ul{
-        width: 40vh;
-        display: flex;
-        padding: 0;
-        list-style: none;
-    }
-    
-    header li{
-        border-left: 3vh solid transparent;
-        border-right: 3vh solid transparent;
-        color: white;
-        font-weight: bold;
-        font-size: large;
-        display: flex;
-        align-items: center;
-    }
-    
-    header li:hover{
-        border-left: 1.8vh solid transparent;
-        border-right: 2vh solid transparent;
+
+    .logoSmall{
+        width: 60px;
+        position: fixed;
+        right: 30px;
         cursor: pointer;
+    }
+
+    #menuDespl{
+        width: 100%;
+        height: 50%;
+        margin: 100px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    #menuDespl ul{
+        width: 100%;
+        background-color: rgb(110, 101, 88);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menuDespl ul li{
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
         font-size: x-large;
     }
-    
-    .logo{
-        width: 8vh;
-        height: 8vh;
+
+    .container{
+        width: 100%;
         display: flex;
+        flex-direction: column;
     }
-    
-    .logo img{
+
+    .card{
+        width: 60%;
+        height: 80%;
+        margin: 20px auto;
+    }
+
+    .cardHover{
+        width: 80%;
         margin: auto;
-        width: 7vh;
-        height: 7vh;
+    }
+
+    .locationCards{
+        width: 100%;
+        height: 800px;
+        margin: auto;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .sectionLocate{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cardLocation{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .cardLocationHover{
+        width: 100%;
+        background-color: white;
+    }
+
+    .hamFooter{
+        display: none;
     }
 }

@@ -5,8 +5,8 @@ function Presentation(){
         <React.Fragment>
             <section id="principal" className="presentation">
                 <div className="heroImage">
-                    <h2>NO ES BURGER KING</h2>
-                    <p>Tampoco hay ventas a domicilio.</p>
+                    <h2>BURGER PRIME</h2>
+                    <p>Entregas a domicilio en toda el área Metropolitana.</p>
                 </div>
             </section>
         </React.Fragment>

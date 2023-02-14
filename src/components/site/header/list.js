@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom"
+
 function CreateList(props){
-    console.log(props)
-    return( <li><link href={props.href} />{props.data}</li> )
+    return( <li><Link className="linkRouter" to={props.href}>{props.data}</Link></li> )
 }
 
 export default CreateList

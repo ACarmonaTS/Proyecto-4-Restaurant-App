@@ -465,14 +465,14 @@ footer li{
     }
 
     .card{
-        width: 60%;
+        width: 100%;
         height: 80%;
         margin: 20px auto;
     }
 
     .cardHover{
-        width: 80%;
-        margin: auto;
+        width: 90%;
+        margin: 20px auto;
     }
 
     .locationCards{

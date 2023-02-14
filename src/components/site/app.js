@@ -9,10 +9,14 @@ import Reserve from "./main/reserve/reserve.js";
 import Footer from "./footer/footer.js";
 
 function App() {
+  const ocultar = () => {
+    document.getElementById("sleepSection").style.display = "none";
+  }
   return (
       <BrowserRouter>
       <React.Fragment>
-        <header><Header /></header>
+        <header onClick={ocultar}><Header /></header>
+        <div id="sleepSection" style={{display: "flex"}}><Presentation /></div>
         <main>
           <Routes>
               <Route path="/principal" element={<Presentation />} />

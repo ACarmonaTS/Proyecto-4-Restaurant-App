@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Proyecto 4 Restaurant App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+****
 
-## Available Scripts
 
-In the project directory, you can run:
+## **ÍNDICE**
 
-### `npm start`
+* [1. Descripción](#1-descripción)
+* [2. Evaluación](#2-evaluación)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+# 1. Descripción: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Simulación de sistema de inventario CRUD (Create, Read, Update, Delete) (Crear, Leer, Actualizar y Eliminar) y sección de búsqueda. Todos los datos se almacenarán en el localStorage del navegador, por lo que no se perderán si se cierra.
+![](assets/README%2000.png)
 
-### `npm test`
+### Sección: Agregar (El Id y la ganancia se obtienen de forma automática)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](assets/README%2003.png)
 
-### `npm run build`
+#### localStorage después de agregar un elemento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](assets/README%2004.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Sección: Buscar (Se ven todos los elementos que correspondan a un Id)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](assets/README%2005.png)
 
-### `npm run eject`
+### Sección: Editar (Actualizar)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Antes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](assets/README%2006.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Después
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![](assets/README%2007.png)
 
-## Learn More
+### Sección: Eliminar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Antes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![](assets/README%2008.png)
 
-### Code Splitting
+#### Después
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![](assets/README%2009.png)
 
-### Analyzing the Bundle Size
+### Sección: Leer (Tabla con elementos más importantes)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Alt text](assets/README%2010.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### El proyecto cuenta con dos vistas, la vista cambia cuando es menor o mayor a 1200px 
 
-### Advanced Configuration
+#### Menor a 1200px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Alt text](assets/README%2002.png)
 
-### Deployment
+#### Mayor o igual a 1200px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Alt text](assets/README%2001.png)
 
-### `npm run build` fails to minify
+# 2. Evaluación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| ÁREA       | % DEL TOTAL |
+| ------------- |:-------------:|
+| UI      | 20%     |
+| JAVASCRIPT      | 40%     |
+| CONTROL DE VERSIONES      | 15%     |
+| DESPLIEGUE | 15%      |
+| ENTREGA A TIEMPO | 10%      |
